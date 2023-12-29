@@ -1,3 +1,5 @@
+import random
+
 
 print("Welcome to a game of 21, you will have to get the closest to 21 as possible\n")
 
