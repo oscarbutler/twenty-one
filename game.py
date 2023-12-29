@@ -22,3 +22,5 @@ def user():
         print("Opponents Turn...\n")
     if intro.endswith("Stick"):
         print("Opponents Turn...\n")
+
+    def opponent():
