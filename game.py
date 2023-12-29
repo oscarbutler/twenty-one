@@ -19,4 +19,6 @@ def user():
 intro = input("Hit or Stick:\n")
 if intro.endswith('Hit'):
     print(randomised)
+    print("Opponents Turn...")
 if intro.endswith("Stick")
+    print("Opponents Turn...")
