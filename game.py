@@ -16,9 +16,9 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """
-intro = input("Hit or Stick:\n")
-if intro.endswith('Hit'):
-    print(randomised)
-    print("Opponents Turn...\n")
-if intro.endswith("Stick"):
-    print("Opponents Turn...\n")
+    intro = input("Hit or Stick:\n")
+    if intro.endswith('Hit'):
+        print(randomised)
+        print("Opponents Turn...\n")
+    if intro.endswith("Stick"):
+        print("Opponents Turn...\n")
