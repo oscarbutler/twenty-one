@@ -16,6 +16,7 @@ jack = 10
 
 randomised = random.choice(cards)
 user_result_one = print(randomised)
+randomised_two = random.choice(cards)
 
 def user():
     """
@@ -25,11 +26,11 @@ def user():
     """
     intro = input("Hit or Stick:\n")
     if intro.endswith('Hit'):
-        print(randomised)
+        user_result_one
         print("Opponents Turn...\n")
     if intro.endswith("Stick"):
         print("Opponents Turn...\n")
 
-    def opponent():
+def opponent():
 
 user()
