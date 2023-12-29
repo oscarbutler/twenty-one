@@ -17,3 +17,5 @@ def user():
     stay with what they have.
     """
 intro = input("Hit or Stick:\n")
+if intro.endswith('Hit'):
+    print(randomised)
