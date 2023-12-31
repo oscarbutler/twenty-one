@@ -20,7 +20,7 @@ print("Your Turn:")
 randomised = random.choice(cards)
 user_result_one = print(randomised)
 randomised_two = random.choice(cards)
-user_result_two = random.choice(cards)
+user_result_two = print(randomised_two)
 
 def user():
     """
@@ -38,6 +38,7 @@ def user():
     if user_total > 21:
         print("You've lost, better luck next time!")
         return
+    print(user_result_two)
 
 def opponent():
     print("Opponents Turn...\n")
