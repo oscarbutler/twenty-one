@@ -20,18 +20,21 @@ print("Your Turn:")
 randomised = random.choice(cards)
 user_result_one = print(randomised)
 randomised_two = random.choice(cards)
+user_result_two = random.choice(cards)
 
 def user():
     """
     This will give the user and the opponent their first card
     and will give the user the chance to get another card or
     stay with what they have.
-    """
+    """ 
     intro = input("Hit or Stick:\n")
     if intro.endswith('Hit'):
         user_result_one
     if intro.endswith("Stick"):
         print("Opponents Turn...\n")
+    if user_total > 21:
+        print("You've lost, better luck next time!")
 
 def opponent():
     print("Opponents Turn...\n")
