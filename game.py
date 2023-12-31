@@ -28,6 +28,7 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """ 
+    global user_total 
     user_total = [user_result_one] + [user_result_two]
     intro = input("Hit or Stick:\n")
     if intro.endswith('Hit'):
