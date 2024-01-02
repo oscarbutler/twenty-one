@@ -20,7 +20,7 @@ print("Your Turn:")
 randomised = random.choice(cards)
 user_result_one = print(randomised)
 randomised_two = random.choice(cards)
-user_result_two = print(randomised_two)
+
 
 def user():
     """
@@ -29,16 +29,19 @@ def user():
     stay with what they have.
     """ 
     global user_total 
-    user_total = [user_result_one] + [user_result_two]
+    user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
-    while intro.endswith('Hit'):
+    if intro.endswith('Hit'):
         user_result_one
     if intro.endswith("Stick"):
         print("Opponents Turn...\n")
-    if user_total > 21:
-        print("You've lost, better luck next time!")
-        return
-    print(user_result_two)
+    #if user_total > 21:
+     #   print("You've lost, better luck next time!")
+      #  return
+
+def second_turn():
+    if intro.endswith('Hit'):
+        print(user_result_two)
 
 def opponent():
     print("Opponents Turn...\n")
