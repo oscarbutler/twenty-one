@@ -59,5 +59,4 @@ def main():
     user_score = user()
 
 
-opponent()
-user()
+main()
