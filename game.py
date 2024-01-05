@@ -33,7 +33,7 @@ def user():
     global user_total 
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
-    if intro.lower().endswith('Hit'):
+    if intro.lower().strip().endswith('Hit'):
         user_result_one
     if intro.lower().endswith("Stick"):
         print("Opponents Turn...\n")
@@ -53,6 +53,9 @@ def user():
 def opponent():
     print("Opponents Turn...\n")
     print(randomised_two)
+
+def main():
+    
 
 opponent()
 user()
