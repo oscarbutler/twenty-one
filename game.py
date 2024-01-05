@@ -33,7 +33,7 @@ def user():
     global user_total 
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
-    if intro.endswith('Hit'):
+    if intro.lower().endswith('Hit'):
         user_result_one
     if intro.endswith("Stick"):
         print("Opponents Turn...\n")
