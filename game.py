@@ -51,10 +51,16 @@ def user():
      #   print(user_result_two)
 
 def opponent():
+    """
+    The score for the opponent which will be automised.
+    """
     print("Opponents Turn...\n")
     print(randomised_two)
 
 def main():
+    """
+    Adds all the function in to one to increase efficiency.
+    """
     opponent_score = opponent()
     user_score = user()
 
