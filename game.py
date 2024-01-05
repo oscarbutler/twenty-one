@@ -35,7 +35,7 @@ def user():
     intro = input("Hit or Stick:\n")
     if intro.lower().endswith('Hit'):
         user_result_one
-    if intro.endswith("Stick"):
+    if intro.lower().endswith("Stick"):
         print("Opponents Turn...\n")
     #if user_total > 21:
      #   print("You've lost, better luck next time!")
