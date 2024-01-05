@@ -11,6 +11,8 @@ cards = ['2', '3','4' ,'5' ,'6' ,'7' ,'8' ,'9' ,'10' , 'ace', 'king', 'queen' ,'
         '2', '3','4' ,'5' ,'6' ,'7' ,'8' ,'9' ,'10' , 'ace', 'king', 'queen' ,'jack',
         '2', '3','4' ,'5' ,'6' ,'7' ,'8' ,'9' ,'10' , 'ace', 'king', 'queen' ,'jack']
 
+
+
 ace = 1 or 10
 king = 10
 queen = 10
@@ -38,10 +40,12 @@ def user():
     #if user_total > 21:
      #   print("You've lost, better luck next time!")
       #  return
-
-def second_turn():
     if intro.endswith('Hit'):
         print(user_result_two)
+
+#def second_turn():
+   # if intro.endswith('Hit'):
+     #   print(user_result_two)
 
 def opponent():
     print("Opponents Turn...\n")
