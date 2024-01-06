@@ -29,16 +29,16 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """ 
-    global user_total 
+        global user_total
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
     if intro.lower().strip().endswith('Hit'):
         user_result_one
     if intro.lower().strip().endswith("Stick"):
         print("Opponents Turn...\n")
-    #if user_total > 21:
-     #   print("You've lost, better luck next time!")
-      #  return
+    # if user_total > 21:
+    #   print("You've lost, better luck next time!")
+    #  return
     if intro.endswith('Hit'):
         print(user_result_two)
     else:
