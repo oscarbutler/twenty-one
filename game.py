@@ -60,6 +60,7 @@ def opponent():
     print("Opponents Turn...\n")
     print(randomised_two)
 
+
 def main():
     """
     Adds all the function in to one to increase efficiency.
