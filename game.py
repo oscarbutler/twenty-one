@@ -32,7 +32,7 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """
-        global user_total
+    global user_total
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
     if intro.lower().strip().endswith('Hit'):
@@ -47,11 +47,11 @@ def user():
     else:
         print("Invalid input. Please enter 'Hit' or 'Stick'.")
         user()
-        
 
 # def second_turn():
     # if intro.endswith('Hit'):
     # print(user_result_two)
+
 
 def opponent():
     """
