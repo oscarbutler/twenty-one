@@ -70,3 +70,5 @@ def main():
 
 
 main()
+
+def menu():
