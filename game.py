@@ -81,3 +81,6 @@ while answer != 0:
         print("have to get the closest to 21 as possible\n")
         print("Your opponent is also trying to get as close to 21 but if")
         print("they reach 17 or higher they can not get another card.\n")
+    elif answer == 3:
+        print("Option 3 has been chosen.")
+        print("https://github.com/oscarbutler")
