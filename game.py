@@ -76,3 +76,8 @@ def menu():
     print("[2] How to Play.")
     print("[3] Credits")
     print("[0] Exit The Programn.")
+
+while answer != 0:
+    if answer == 1:
+        print("Option 1 has been chosen.")
+        first_answer()
