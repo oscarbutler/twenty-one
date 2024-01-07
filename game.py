@@ -84,3 +84,5 @@ while answer != 0:
     elif answer == 3:
         print("Option 3 has been chosen.")
         print("https://github.com/oscarbutler")
+    else:
+        print("Invalid Option.")
