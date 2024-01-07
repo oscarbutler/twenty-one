@@ -1,11 +1,5 @@
 import random
 
-
-print("Welcome to a game of 21, you will")
-print("have to get the closest to 21 as possible\n")
-print("Your opponent is also trying to get as close to 21 but if")
-print("they reach 17 or higher they can not get another card.\n")
-
 cards = ['2', '3', '4', '5', '6', '7', '8', '9',
          '10', 'ace', 'king', 'queen', 'jack',
          '2', '3', '4', '5', '6', '7', '8', '9',
@@ -83,4 +77,7 @@ while answer != 0:
         first_answer()
     elif answer == 2:
         print("Option 2 has been chosen.")
-        
+        print("Welcome to a game of 21, you will")
+        print("have to get the closest to 21 as possible\n")
+        print("Your opponent is also trying to get as close to 21 but if")
+        print("they reach 17 or higher they can not get another card.\n")
