@@ -81,3 +81,6 @@ while answer != 0:
     if answer == 1:
         print("Option 1 has been chosen.")
         first_answer()
+    elif answer == 2:
+        print("Option 2 has been chosen.")
+        
