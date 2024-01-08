@@ -55,6 +55,7 @@ def opponent():
     The score for the opponent which will be automised.
     """
     print("Opponents Turn...\n")
+    randomised_two = random.choice(cards)
     print(randomised_two)
 
 def main():
