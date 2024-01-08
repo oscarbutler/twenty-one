@@ -68,17 +68,6 @@ def menu():
     print("[3] Credits")
     print("[0] Exit the programn.")
 
-def second_answer():
-    answer_two = print("Welcome to a game of 21, you will")
-    print("have to get the closest to 21 as possible\n")
-    print("Your opponent is also trying to get as close to 21 but if")
-    print("they reach 17 or higher they can not get another card.\n")
-
-def third_answer():
-    answer_three = print("Credits: https://github.com/oscarbutler")
-
-def first_answer():
-    main()
 
 menu()
 answer = int(input("Enter your option: "))
@@ -86,10 +75,10 @@ answer = int(input("Enter your option: "))
 while answer != 0:
     if answer == 1:
         print("Option 1 has been chosen.")
-        first_answer()
+        main()
     elif answer == 2:
         print("Option 2 has been chosen.")
-        answer_two = print("Welcome to a game of 21, you will")
+        print("Welcome to a game of 21, you will")
         print("have to get the closest to 21 as possible\n")
         print("Your opponent is also trying to get as close to 21 but if")
         print("they reach 17 or higher they can not get another card.\n")
