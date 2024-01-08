@@ -19,6 +19,11 @@ king = 10
 queen = 10
 jack = 10
 
+def user_turn():
+    print("Your Turn:")
+    randomised = random.choice(cards)
+    user_result_one = print(randomised)
+    randomised_two = random.choice(cards)
 
 def user():
     """
