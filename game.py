@@ -1,5 +1,10 @@
 import random
 
+print("Welcome to a game of 21, you will")
+print("have to get the closest to 21 as possible\n")
+print("Your opponent is also trying to get as close to 21 but if")
+print("they reach 17 or higher they can not get another card.\n")
+
 cards = ['2', '3', '4', '5', '6', '7', '8', '9',
          '10', 'ace', 'king', 'queen', 'jack',
          '2', '3', '4', '5', '6', '7', '8', '9',
@@ -14,11 +19,6 @@ king = 10
 queen = 10
 jack = 10
 
-print("Your Turn:")
-randomised = random.choice(cards)
-user_result_one = print(randomised)
-randomised_two = random.choice(cards)
-
 
 def user():
     """
@@ -26,6 +26,7 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """
+    user_turn()
     global user_total
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
@@ -54,7 +55,6 @@ def opponent():
     print("Opponents Turn...\n")
     print(randomised_two)
 
-
 def main():
     """
     Adds all the function in to one to increase efficiency.
@@ -62,14 +62,26 @@ def main():
     opponent_score = opponent()
     user_score = user()
 
-
-main()
-
 def menu():
     print("[1] Play The Game!")
-    print("[2] How to Play.")
+    print("[2] How to Play")
     print("[3] Credits")
-    print("[0] Exit The Programn.")
+    print("[0] Exit the programn.")
+
+def second_answer():
+    answer_two = print("Welcome to a game of 21, you will")
+    print("have to get the closest to 21 as possible\n")
+    print("Your opponent is also trying to get as close to 21 but if")
+    print("they reach 17 or higher they can not get another card.\n")
+
+def third_answer():
+    answer_three = print("Credits: https://github.com/oscarbutler")
+
+def first_answer():
+    main()
+
+menu()
+answer = int(input("Enter your option: "))
 
 while answer != 0:
     if answer == 1:
@@ -77,7 +89,7 @@ while answer != 0:
         first_answer()
     elif answer == 2:
         print("Option 2 has been chosen.")
-        print("Welcome to a game of 21, you will")
+        answer_two = print("Welcome to a game of 21, you will")
         print("have to get the closest to 21 as possible\n")
         print("Your opponent is also trying to get as close to 21 but if")
         print("they reach 17 or higher they can not get another card.\n")
@@ -86,3 +98,9 @@ while answer != 0:
         print("https://github.com/oscarbutler")
     else:
         print("Invalid Option.")
+    
+    menu()
+    print()
+    answer = int(input("Enter your option: "))
+
+
