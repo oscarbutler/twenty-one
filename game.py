@@ -27,7 +27,7 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """
-    user_turn()
+    user_result_one = user_turn()
     global user_total
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
