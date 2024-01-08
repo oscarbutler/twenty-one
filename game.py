@@ -31,7 +31,8 @@ def user():
     user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
     if intro.lower().strip().endswith('Hit'):
-        user_result_one
+        user_result_two = user_turn()
+        user_total.append(user_result_two) 
     if intro.lower().strip().endswith("Stick"):
         print("Opponents Turn...\n")
     # if user_total > 21:
