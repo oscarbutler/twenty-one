@@ -28,24 +28,25 @@ def user():
     stay with what they have.
     """
     user_result_one = user_turn()
-    global user_total
-    user_total = [user_result_one]
     intro = input("Hit or Stick:\n")
+
     if intro.lower().strip().endswith('Hit'):
         user_result_two = user_turn()
+        user_total += cards[user_result_two]
         user_total.append(user_result_two) 
         if user_total > 21:
             print("You've lost, better luck next time!")
             return
+    
     if intro.lower().strip().endswith("Stick"):
         print("Opponents Turn...\n")
-    
+        
     if intro.endswith('Hit'):
         print(user_result_two)
     else:
         print("Invalid input. Please enter 'Hit' or 'Stick'.")
         user()
-
+    
 # def second_turn():
     # if intro.endswith('Hit'):
     # print(user_result_two)
@@ -55,7 +56,7 @@ def opponent():
     """
     The score for the opponent which will be automised.
     """
-    print("Opponents Turn...\n")
+    print("Opponents Turn...\n") 
     randomised_two = random.choice(cards)
     print(randomised_two)
 
@@ -65,6 +66,10 @@ def main():
     """
     opponent_score = opponent()
     user_score = user()
+    user_total = user_result_one + user_result_two
+    print(user_total)
+    
+    
 
 def menu():
     print("[1] Play The Game!")
