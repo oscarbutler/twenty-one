@@ -41,15 +41,11 @@ def user():
     if intro.lower().strip().endswith("Stick"):
         print("Opponents Turn...\n")
         
-    if intro.endswith('Hit'):
-        print(user_result_two)
     else:
         print("Invalid input. Please enter 'Hit' or 'Stick'.")
         user()
-    
-# def second_turn():
-    # if intro.endswith('Hit'):
-    # print(user_result_two)
+    return user_turn
+
 
 
 def opponent():
