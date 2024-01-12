@@ -43,11 +43,12 @@ def user():
     
         elif intro.lower().strip().endswith('stick'):
             print("Opponents Turn...\n")
-            
+            break
+
         else:
             print("Invalid input. Please enter 'Hit' or 'Stick'.")
 
-        return user_total
+    return user_total
 
 def value(card):
     if card.isdigit():
