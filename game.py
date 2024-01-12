@@ -41,12 +41,12 @@ def user():
             print("You've lost, better luck next time!")
             return user_total
     
-    if intro.lower().strip().endswith("Stick"):
+    elif intro.lower().strip().endswith("Stick"):
         print("Opponents Turn...\n")
         
     else:
         print("Invalid input. Please enter 'Hit' or 'Stick'.")
-        user()
+
     return user_turn
 
 def value(card):
