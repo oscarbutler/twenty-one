@@ -33,6 +33,10 @@ def user():
     while True:
         intro = input("Hit or Stick:\n")
 
+        print("Opponents Turn...\n") 
+        randomised_two = random.choice(cards)
+        print(randomised_two)
+
         if intro.lower().strip().endswith('hit'):
             user_result_two = user_turn()
             user_total += value(user_result_two)
@@ -40,7 +44,9 @@ def user():
             if user_total > 21:
                 print("You've lost, better luck next time!")
                 return user_total
-    
+        
+            
+                
         elif intro.lower().strip().endswith('stick'):
             print("Opponents Turn...\n")
             break
@@ -60,19 +66,19 @@ def value(card):
     
 
 
-def opponent():
+#def opponent():
     """
     The score for the opponent which will be automised.
     """
-    print("Opponents Turn...\n") 
-    randomised_two = random.choice(cards)
-    print(randomised_two)
+ #   print("Opponents Turn...\n") 
+  #  randomised_two = random.choice(cards)
+   # print(randomised_two)
 
 def main():
     """
     Adds all the function in to one to increase efficiency.
     """
-    opponent_score = opponent()
+    #opponent()
     user_score = user()
     print(f"User's Total Score: {user_score}")
     
