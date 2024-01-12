@@ -50,7 +50,9 @@ def user():
         user()
     return user_turn
 
-
+def value(card):
+    if card.isdigit():
+        return int(card)
 
 def opponent():
     """
