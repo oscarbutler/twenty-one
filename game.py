@@ -47,7 +47,7 @@ def user():
     else:
         print("Invalid input. Please enter 'Hit' or 'Stick'.")
 
-    return user_turn
+    return user_total
 
 def value(card):
     if card.isdigit():
@@ -73,8 +73,7 @@ def main():
     """
     opponent_score = opponent()
     user_score = user()
-    user_total = user_result_one + user_result_two
-    print(user_total)
+    print(f"User's Total Score: {user_score}")
     
     
 
