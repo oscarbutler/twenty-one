@@ -27,8 +27,9 @@ def user():
     and will give the user the chance to get another card or
     stay with what they have.
     """
+    user_total = 0
+    print("Your Turn:")
     user_result_one = user_turn()
-    intro = input("Hit or Stick:\n")
 
     if intro.lower().strip().endswith('Hit'):
         user_result_two = user_turn()
