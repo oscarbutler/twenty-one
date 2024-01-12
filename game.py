@@ -36,11 +36,11 @@ def user():
 
     if intro.lower().strip().endswith('Hit'):
         user_result_two = user_turn()
-        user_total += cards[user_result_two]
+        user_total += value(user_result_two)
 
         if user_total > 21:
             print("You've lost, better luck next time!")
-            return
+            return user_total
     
     if intro.lower().strip().endswith("Stick"):
         print("Opponents Turn...\n")
