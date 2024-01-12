@@ -31,6 +31,9 @@ def user():
     print("Your Turn:")
     user_result_one = user_turn()
 
+    while True:
+        intro = input("Hit or Stick:\n")
+
     if intro.lower().strip().endswith('Hit'):
         user_result_two = user_turn()
         user_total += cards[user_result_two]
