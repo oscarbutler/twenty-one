@@ -28,7 +28,6 @@ def user():
     stay with what they have.
     """
     user_total = 0
-    print("Your Turn:")
     user_result_one = user_turn()
 
     while True:
