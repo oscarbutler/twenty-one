@@ -14,6 +14,7 @@ king = 10
 queen = 10
 jack = 10
 
+
 def user_turn():
     print("Your Turn:")
     randomised = random.choice(cards)
@@ -33,7 +34,7 @@ def user():
     while True:
         intro = input("Hit or Stick:\n")
 
-        print("Opponents Turn...\n") 
+        print("Opponents Turn...\n")
         randomised_two = random.choice(cards)
         print(randomised_two)
 
@@ -44,19 +45,17 @@ def user():
             if user_total > 21:
                 print("You've lost, better luck next time!")
                 return user_total
-        
-            
-                
+
         elif intro.lower().strip().endswith('stick'):
-            #print("Opponents Turn...\n")
+            # print("Opponents Turn...\n")
             randomised_two = random.choice(cards)
-            #print(randomised_two)
-            
+            # print(randomised_two)
 
         else:
             print("Invalid input. Please enter 'Hit' or 'Stick'.")
 
     return user_total
+
 
 def value(card):
     if card.isdigit():
@@ -65,26 +64,24 @@ def value(card):
         return ace
     else:
         return 10
-    
 
-
-#def opponent():
+# def opponent():
     """
     The score for the opponent which will be automised.
     """
- #   print("Opponents Turn...\n") 
-  #  randomised_two = random.choice(cards)
-   # print(randomised_two)
+    # print("Opponents Turn...\n")
+    # randomised_two = random.choice(cards)
+    # print(randomised_two)
+
 
 def main():
     """
     Adds all the function in to one to increase efficiency.
     """
-    #opponent()
+    # opponent()
     user_score = user()
     print(f"User's Total Score: {user_score}")
-    
-    
+
 
 def menu():
     print("[1] Play The Game!")
@@ -111,7 +108,7 @@ while answer != 0:
         print("https://github.com/oscarbutler")
     else:
         print("Invalid Option.")
-    
+
     menu()
     print()
     answer = int(input("Enter your option: "))
