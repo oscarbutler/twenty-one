@@ -48,8 +48,10 @@ def user():
             
                 
         elif intro.lower().strip().endswith('stick'):
-            print("Opponents Turn...\n")
-            break
+            #print("Opponents Turn...\n")
+            randomised_two = random.choice(cards)
+            #print(randomised_two)
+            
 
         else:
             print("Invalid input. Please enter 'Hit' or 'Stick'.")
