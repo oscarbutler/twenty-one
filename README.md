@@ -27,3 +27,8 @@ In the menu it is simple as you input which number you want which corrosponds to
 The menu creates efficency for the user and simplicity in order for them to achieve what they want.
 
 ## Technology Used
+
+- Python was used to make the code.
+- VS code was used to write the code.
+- Git Hub was where the repository and code is stored.
+- Pep8Ci was used to make sure that the code is correct
