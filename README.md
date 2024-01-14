@@ -33,6 +33,14 @@ The menu creates efficency for the user and simplicity in order for them to achi
 - Git Hub was where the repository and code is stored.
 - Pep8Ci was used to make sure that the code is correct
 
+## Bugs
+
+### Solved Bugs
+
+### Unsolved Bugs
+
+### Mistakes
+
 ## Deployment
 I deployed my code to the GitHub where you can view the progression of the code I produced.
 
