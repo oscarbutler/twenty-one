@@ -64,6 +64,9 @@ def user():
 
 
 def value(card):
+    """
+    Gives value to ace cards
+    """
     if card.isdigit():
         return int(card)
     elif card.lower() == 'ace':
