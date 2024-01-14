@@ -9,3 +9,5 @@
 ### Returning User
 
 ### Frequent User
+
+## Purpose
