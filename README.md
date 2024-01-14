@@ -35,6 +35,8 @@ The menu creates efficency for the user and simplicity in order for them to achi
 
 ## Credits
 
+- I learnt the knowledge to create this code through the Code Institute Course.
+
 ## Bugs
 
 ### Solved Bugs
