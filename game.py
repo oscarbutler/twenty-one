@@ -16,6 +16,9 @@ jack = 10
 
 
 def user_turn():
+    """
+    A short function which randomises the cards and gives one to the user
+    """
     print("Your Turn:")
     randomised = random.choice(cards)
     print(randomised)
