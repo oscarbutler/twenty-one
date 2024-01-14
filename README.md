@@ -41,6 +41,10 @@ The menu creates efficency for the user and simplicity in order for them to achi
 
 ### Mistakes
 
+- In git 6669650 I have accidently added a letter onto the end of word.
+
+- In git d415dd4 there was a a spelling mistake in which I mistakenly spelt delete incorrectly.
+
 ## Deployment
 I deployed my code to the GitHub where you can view the progression of the code I produced.
 
