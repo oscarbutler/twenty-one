@@ -90,6 +90,9 @@ def main():
 
 
 def menu():
+    """
+    A menu that will show the user a variety of choices
+    """
     print("[1] Play The Game!")
     print("[2] How to Play")
     print("[3] Credits")
