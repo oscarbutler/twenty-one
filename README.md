@@ -25,3 +25,5 @@ There is a menu that gives the player information on how to play and who made th
 In the menu it is simple as you input which number you want which corrosponds to the correct option.
 
 The menu creates efficency for the user and simplicity in order for them to achieve what they want.
+
+## Technology Used
